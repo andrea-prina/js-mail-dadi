@@ -29,8 +29,22 @@ if (mailCheck === true) {
 
 
 
+//* ESERCIZIO 2 - GIOCO DADI
 
+// Generate a random number (between 1 and 6) for the player and for the computer
+const playerNumber = Math.floor((Math.random() * 6) + 1);
+const computerNumber = Math.floor((Math.random() * 6) + 1);
 
+console.log(`The Player number is: ${playerNumber}`);
+console.log(`The Computer number is: ${computerNumber}`);
 
-// Gioco dei dadi (separatemente)
-// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
+// Check who is the winner (higher number)
+if (playerNumber > computerNumber) {
+    console.log("The winner is the Player!!");
+
+} else if (playerNumber == computerNumber) {
+    console.log("It's a draw!");
+
+} else {
+    console.log("The winner is the Computer!!")
+}
